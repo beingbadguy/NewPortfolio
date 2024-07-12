@@ -16,8 +16,8 @@ const App = () => {
       animate={{ y: 0 }}
       transition={{
         type: "spring",
-        stiffness: 100,
-        damping: 10,
+        stiffness: 500,
+        damping: 8,
       }}
     >
       {/* upper section  */}

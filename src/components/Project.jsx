@@ -9,6 +9,7 @@ const Project = ({
   imgUrl = "./slay.png",
   codeUrl,
   webUrl,
+  skill,
 }) => {
   return (
     <div className="flex flex-col w-[300px]  p-2 rounded-t-xl w-[99%] md:w-[46%] ">
@@ -19,10 +20,16 @@ const Project = ({
         <p>{name}</p>
         <p className="">{title}</p>
         <div className="flex flex-wrap mt-2 gap-2">
-          <Skills skill={"ReactJs"} color="bg-gray-700" text="white" />
-          <Skills skill={"React-router-dom"} color="bg-gray-700" text="white" />
-          <Skills skill={"Rapid-API"} color="bg-gray-700" text="white" />
-          <Skills skill={"TailwindCSS"} color="bg-gray-700" text="white" />
+          {skill?.map((value, index) => {
+            return (
+              <Skills
+                key={index}
+                skill={value}
+                color="bg-gray-700"
+                text="white"
+              />
+            );
+          })}
         </div>
         <div className="  text-white flex items-center  justify-start gap-2 mt-5  mb-2  text-sm">
           <div className="flex items-center p-2 gap-2 border rounded-2xl">

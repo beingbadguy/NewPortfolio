@@ -113,6 +113,7 @@ const App = () => {
             imgUrl={"./slay.png"}
             webUrl={"https://sassy-ecom.vercel.app/"}
             codeUrl={"https://github.com/beingbadguy/AmanPortfolio"}
+            skill={["ReactJs", "Nodejs", "TailwindCSS", "MongoDB", "ExpressJs"]}
           />
           <Project
             name="Notify"
@@ -120,6 +121,7 @@ const App = () => {
             imgUrl={"./Notify.png"}
             webUrl={"https://notify-ochre.vercel.app/"}
             codeUrl={"https://github.com/beingbadguy/notify"}
+            skill={["ReactJs", "Supabase", "TailwindCSS"]}
           />
           <Project
             name="JobPedia"
@@ -127,6 +129,7 @@ const App = () => {
             imgUrl={"./JobPedia.png"}
             webUrl={"https://job-pedia-ochre.vercel.app/"}
             codeUrl={"https://github.com/beingbadguy/JobPedia"}
+            skill={["ReactJs", "Supabase", "TailwindCSS"]}
           />
           <Project
             name="Chat-Bot"
@@ -134,6 +137,7 @@ const App = () => {
             imgUrl={"./bot.png"}
             webUrl={"https://chat-bot-phi-blond.vercel.app/"}
             codeUrl={"https://github.com/beingbadguy/chatBot"}
+            skill={["ReactJs", "TailwindCSS", "Gemini-AI"]}
           />
         </div>
       </div>

@@ -3,41 +3,35 @@ import Skills from "./Skills";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { GiWireframeGlobe } from "react-icons/gi";
 
-const Project = () => {
+const Project = ({
+  name = "demo",
+  title = "demo title will be here",
+  imgUrl = "./slay.png",
+  codeUrl,
+  webUrl,
+}) => {
   return (
     <div className="flex flex-col w-[300px]  p-2 rounded-t-xl w-[99%] md:w-[46%] ">
-      <div className="flex items-center justify-center bg-white rounded-t-xl">
-        <img
-          src="https://dummyimage.com/300.png/09f/fff"
-          alt=""
-          className="h-{100px} w-[200px] p-2"
-        />
+      <div className="flex items-center justify-center bg-yellow-300 rounded-t-xl">
+        <img src={imgUrl} alt="" className="h-{100px} w-[300px] p-2" />
       </div>
       <div className="border-neutral-600  border rounded-b-xl p-2 text-sm">
-        <p>Chat Collect</p>
-        <p className="">
-          With the release of the OpenAI GPT Store, I decided to build a SaaS
-          which allows users to collect email addresses from their GPT users.
-          This is a great way to build an audience and monetize your GPT API
-          usage.
-        </p>
+        <p>{name}</p>
+        <p className="">{title}</p>
         <div className="flex flex-wrap mt-2 gap-2">
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
-          <Skills skill={"Next Js"} color="bg-gray-700" text="white" />
+          <Skills skill={"ReactJs"} color="bg-gray-700" text="white" />
+          <Skills skill={"React-router-dom"} color="bg-gray-700" text="white" />
+          <Skills skill={"Rapid-API"} color="bg-gray-700" text="white" />
+          <Skills skill={"TailwindCSS"} color="bg-gray-700" text="white" />
         </div>
         <div className="  text-white flex items-center  justify-start gap-2 mt-5  mb-2  text-sm">
           <div className="flex items-center p-2 gap-2 border rounded-2xl">
             <GiWireframeGlobe />
-            <a href="">Website</a>
+            <a href={webUrl}>Website</a>
           </div>
           <div className="flex items-center p-2  gap-2  border rounded-2xl">
             <IoCodeSlashOutline />
-            <a href="">Code</a>
+            <a href={codeUrl}>Code</a>
           </div>
         </div>
       </div>
